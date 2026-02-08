@@ -1,0 +1,170 @@
+import React from "react";
+const sideimage ='src/assets/image/youngbreadman.webp'
+import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
+import mainlogo from '../../assets/image/Acadex-logo.svg';
+import { Link, useNavigate } from "react-router-dom";
+console.log((localStorage))
+
+// Yup validation schema
+const schema = yup.object().shape({
+  firstname: yup.string().required("Please enter your first name"),
+  email: yup.string().email("Invalid email address").required("Email is required"),
+
+  password: yup.string()
+    .required("Password is required")
+    .min(6, "Minimum 6 characters")
+    .max(10, "Maximum 10 characters")
+    .matches(/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>?]/, "Password must contain at least one special character")
+    .matches(/^\S*$/, "Password cannot contain spaces"),
+  confirmPassword: yup.string()
+    .oneOf([yup.ref('password'), null], "Passwords must match")
+    .required("Confirm Password is required"),
+  termscheck: yup.boolean().oneOf([true], "Please accept terms & conditions")
+});
+
+function SignUp() {
+  const navigate =useNavigate()
+  const notify = () => toast.success('The form has been submitted successfully');
+
+  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+    resolver: yupResolver(schema)
+  });
+
+  const handleOnSubmit = (data) => {
+    console.log("Form Submitted", data);
+  
+
+    const userData = {
+      firstname: data.firstname,
+      email: data.email,
+      password: data.password
+    };
+    localStorage.setItem("signupUser", JSON.stringify(userData))
+    navigate('/sign-in')
+    notify();
+    reset();
+
+
+    
+
+  };
+
+  return (
+    <Container fluid>
+      <Row>
+        <Col lg={6} className="bg-color py-5 padding-x">
+          {/* Logo and App Name */}
+          <div className="d-flex align-items-center mb-5">
+            <Image src={mainlogo} style={{ width: "44px", height: '44px' }} />
+            <h3 className="ms-2 mb-0 Dis-1 text-dark">Acadex</h3>
+          </div>
+
+          {/* Heading */}
+          <p className="Dis-2 text-dark">
+            If opportunity doesn’t knock, build a <span className="text-primary">door</span>.
+          </p>
+
+          {/* Subheading */}
+          <p className="Title-4-Medium gray-500 ">
+            A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
+          </p>
+
+          {/* Form */}
+          <Form
+            onSubmit={handleSubmit(handleOnSubmit)}
+
+          >
+            <ToastContainer />
+
+            <Form.Group className="mb-3">
+              <Form.Label className="form-input">First name</Form.Label>
+              <Form.Control
+
+                type="text"
+                {...register("firstname")}
+                className="  inpur-border  rounded-4"
+
+              />
+              <div className="text-danger">{errors?.firstname?.message}</div>
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label className="form-input">Email address</Form.Label>
+              <Form.Control
+                type="email"
+                {...register("email")}
+                className=" inpur-border  rounded-4"
+
+              />
+              <div className="text-danger">{errors?.email?.message}</div>
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label className="form-input">Password</Form.Label>
+              <Form.Control
+                type="password"
+                {...register("password")}
+                className=" inpur-border  rounded-4"
+
+              />
+              <div className="text-danger">{errors?.password?.message}</div>
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label className="form-input">Confirm Password</Form.Label>
+              <Form.Control
+                type="password"
+                {...register("confirmPassword")}
+                className=" inpur-border  rounded-4"
+
+              />
+              <div className="text-danger">{errors?.confirmPassword?.message}</div>
+            </Form.Group>
+
+            <Form.Group className="mb-5">
+              <Form.Check
+                type="checkbox"
+                label={
+                  <>
+                    I agree to all the Terms of{" "}
+                    <a href="#" >
+                      conditions & Privacy Policy
+                    </a>
+
+                  </>
+                }
+                {...register("termscheck")}
+                className="Title-4-Medium gray-500"
+              />
+              <div className="text-danger">{errors?.termscheck?.message}</div>
+            </Form.Group>
+
+            <Button type="submit" className="Body-Bold px-3 py-3 mb-5" >
+              Create Account
+            </Button>
+
+            <p className=" Body-Bold" >
+              Already have an account?
+              <Link to='/sign-in' className="text-info"> Log In</Link>
+            </p>
+          </Form>
+        </Col>
+
+        <Col lg={6} className="">
+          <Image
+            src={sideimage}
+            className=" w-100 h-100 "
+          />
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
+export default SignUp;
