@@ -74,21 +74,21 @@ function StudentsYearData() {
                 {list.map((item, i) => (
                     <div
                         key={i}
-                        className="d-flex justify-content-between align-items-center mb-3"
+                        className="d-flex align-items-center mb-1"
                     >
                         <span
-                            className="spansmallbox rounded-1 me-2"
+                            className="spansmallbox rounded-1 "
                             style={{ background: item.color }}
                         />
 
                         <p className="Button-Medium text-dark mb-0">
                             {item.year}
-                            <span className="gray-100 XSmall-Regular">
+                            <span className="gray-100 XSmall-Regular pe-1">
                                 {" "}({((item.value / totalValue) * 100).toFixed(2)}%)
                             </span>
                         </p>
 
-                        <p className="ms-auto XSmall-Medium mb-0">
+                        <p className=" XSmall-Medium mb-0">
                             {item.value.toLocaleString()} students
                         </p>
                     </div>
