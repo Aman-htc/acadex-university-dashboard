@@ -130,7 +130,7 @@ const AcademicChart = () => {
               strokeWidth={3}
               fill="url(#colorGreen)"
               dot={({ cx, cy, payload }) => {
-                if (payload.value === maxItem.value) {
+                if (payload.value ===  maxItem.value) {
                   return (
                     <g>
                       <line x1={cx} y1={cy} x2={cx} y2={160} stroke="#2f9e6f" strokeDasharray="4 6" strokeWidth={2} />

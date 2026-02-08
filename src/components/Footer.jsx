@@ -7,7 +7,7 @@ function Footer() {
         <footer className=" py-3 mt-3 ">
             <Container className=" ">
                 <Row className="text-center text-md-end">
-                    {/* Left: Copyright */}
+                
                     <Col className="text-center text-lg-end XSmall-Medium gray-100 mb-2 mb-md-0">
                         <div >
                             Copyright © 2024 Acadex
@@ -15,7 +15,7 @@ function Footer() {
                     </Col>
                 </Row>
 
-                {/* Center: Links */}
+                
                 <Row>
                     <Col className="text-center text-lg-end mt-3" >
                        <span className="ms-3 gray-200 XSmall-Regular">Privacy Policy</span>

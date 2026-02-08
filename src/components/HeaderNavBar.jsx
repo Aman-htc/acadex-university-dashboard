@@ -13,7 +13,7 @@ function HeaderNavBar() {
         <Navbar collapseOnSelect expand="lg" className="bg-color px-3 mb-2">
             <Container className="d-flex justify-content-between align-items-center">
 
-                {/* Left side: Title and Date */}
+         
                 <Navbar.Brand className="d-flex flex-column mb-0">
                     <h1 className='Display-4 mb-0'>Dashboard</h1>
                     <p className="mb-0 gray-200 XSmall-Medium">
@@ -25,10 +25,10 @@ function HeaderNavBar() {
                         })}</p>
                 </Navbar.Brand>
 
-                {/* Toggle for small screens */}
+               
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
-                {/* Right side: Icons */}
+             
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto  align-items-center gap-3">
                         <Nav.Link href="#search"><Search size={24} /></Nav.Link>

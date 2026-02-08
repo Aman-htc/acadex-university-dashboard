@@ -1,4 +1,4 @@
-const sideimage ='src/assets/image/youngbreadman.webp'
+const sideimage = 'src/assets/image/youngbreadman.webp'
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
 import { useForm } from "react-hook-form";
@@ -40,21 +40,15 @@ function SignIn() {
         if (!getdata) {
             setError('"No user found, please sign up"')
             return;
-
-
         }
         const matchdata = getdata.email === data.email && getdata.password === data.password
-        
+
         if (matchdata) {
             localStorage.setItem("login", "true")
             notify();
             setError('')
 
             navigate('/')
-
-          
-
-
         } else {
             setError('Invalid email or password')
         }
@@ -68,7 +62,7 @@ function SignIn() {
 
     return (
         <Container fluid>
-            <ToastContainer/>
+           
             <Row>
                 <Col lg={6} className="bg-color  py-5  padding-x">
                     {/* Logo and App Name */}
@@ -82,7 +76,7 @@ function SignIn() {
                         Logout the past, Login to the <span className="text-primary"> new!</span>.
                     </p>
 
-                    {/* Subheading */}
+                  
                     <p className="Title-4-Medium gray-500 ">
                         A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
                     </p>
@@ -145,17 +139,17 @@ function SignIn() {
                         </p>
                         <p className=" Body-Bold pb-5 " >
                             {error}
-                            
+
                         </p>
                     </Form>
                 </Col>
 
                 <Col lg={6} className="">
-                          <Image
-                            src={sideimage}
-                            className="w-100 h-100"
-                          />
-                        </Col>
+                    <Image
+                        src={sideimage}
+                        className="w-100 h-100"
+                    />
+                </Col>
             </Row>
         </Container>
     );

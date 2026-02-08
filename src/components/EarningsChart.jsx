@@ -1,6 +1,3 @@
-
-
-
 import {
     BarChart,
     Bar,
@@ -71,7 +68,7 @@ const EarningsChart = () => {
 
                     <YAxis
                         axisLine={false}
-                        // axisLine={{stork:'#A6A6A8'}}
+                        
                         tickLine={false}
                         tickFormatter={(v) => `${v / 1000}K`}
                         tick={{ fill: "#A6A6A8",fontSize:'10px',fontFamily:'sans-serif',margin:'3px' }}
@@ -89,7 +86,7 @@ const EarningsChart = () => {
                         dataKey="earnings"
                         fill="#1f5edc"
                         radius={[3, 3, 0, 0]}
-                        // radius={{radius:'5'}}
+                        
 
                         barSize={12}
                     />

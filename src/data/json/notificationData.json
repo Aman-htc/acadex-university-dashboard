@@ -14,6 +14,7 @@
       "title": "Hello, I'm having trouble accessing the online library resources. Could you assist me?",
       "time": "11:15 AM"
     },
+    
     {
       "id": 3,
       "image": "src/assets/image/avtarimage.webp",
@@ -55,6 +56,13 @@
       "name": "Campus Health Center",
       "title": "I need assistance with room booking for my extra lectures next week.",
       "time": "9:00 AM"
+    },
+    {
+      "id": 9,
+      "image": "src/assets/image/awtarimage3.webp",
+      "name": "Dr. Alan Hopper",
+      "title": "Flu vaccinations are available free of charge next week. Please visit the Health Center.",
+      "time": "7:45 AM"
     },
     {
       "id": 9,

@@ -14,23 +14,8 @@ function timeAgo(dateTimeString) {
   const diffMs = now - eventDate;
   const diffSec = Math.floor(diffMs / 1000);
 
-  // FUTURE TIME
-  if (diffSec < 0) {
-    const futureSec = Math.abs(diffSec);
-
-    if (futureSec < 60) return "In a few seconds";
-    if (futureSec < 3600) return `In ${Math.floor(futureSec / 60)} minutes`;
-    if (futureSec < 86400) return `In ${Math.floor(futureSec / 3600)} hours`;
-
-    const days = Math.floor(futureSec / 86400);
-    if (days === 1) return "Tomorrow";
-    if (days < 30) return `In ${days} days`;
-
-    const months = Math.floor(days / 30);
-    if (months < 12) return `In ${months} months`;
-  }
-
-  // PAST TIME
+  
+  
   if (diffSec >= 0) {
     if (diffSec < 60) return "Just now";
     if (diffSec < 3600) return `${Math.floor(diffSec / 60)} minutes ago`;
@@ -51,6 +36,7 @@ function timeAgo(dateTimeString) {
 }
 
 const RecentActivity = () => {
+  
   const activities = studentData.RecentActivity;
 
   // 1 month ka filter
@@ -59,11 +45,11 @@ const RecentActivity = () => {
   oneMonthAgo.setMonth(now.getMonth() - 1);
 
   const recentActivities = activities
-  .filter((item) => {
-    const activityDate = new Date(item.date);
-    return activityDate >= oneMonthAgo && activityDate <= now;
-  })
-  .sort((a, b) => new Date(b.date) - new Date(a.date));
+    .filter((item) => {
+      const activityDate = new Date(item.date);
+      return activityDate >= oneMonthAgo && activityDate <= now;
+    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
     <Container className="py-1">
@@ -98,6 +84,8 @@ const RecentActivity = () => {
                 <Col className="ps-0">
                   <div className="gray-100 descripation XSmall-Regular">
                     {item.text}
+                  
+
                   </div>
 
                   <div className="gray-200 XSmall-Regular mt-1">

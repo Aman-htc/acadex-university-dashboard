@@ -1,5 +1,5 @@
 import React from "react";
-// import { studentYearData } from "../data/js/allPath";
+
 import { Card } from "react-bootstrap";
 
 import { ThreeDots } from "react-bootstrap-icons";
@@ -13,7 +13,7 @@ const circumference = 2 * Math.PI * radius;
 
 function StudentsYearData() {
 
-    const list = studentYearData?.data || [];
+    const list = studentYearData.data;
 
     const totalValue = list.reduce(
         (sum, item) => sum + (item.value || 0),

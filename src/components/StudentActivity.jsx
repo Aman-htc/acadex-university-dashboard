@@ -15,26 +15,8 @@ function timeAgo(dateTimeString) {
   const diffMs = now - eventDate;
   const diffSec = Math.floor(diffMs / 1000);
 
-  // FUTURE TIME
-  if (diffSec < 0) {
-    const futureSec = Math.abs(diffSec);
-
-    if (futureSec < 60) return "In a few seconds";
-    if (futureSec < 3600) return `In ${Math.floor(futureSec / 60)} minutes`;
-    if (futureSec < 86400) return `In ${Math.floor(futureSec / 3600)} hours`;
-
-    const days = Math.floor(futureSec / 86400);
-    if (days === 1) return "Tomorrow";
-    if (days < 30) return `In ${days} days`;
-
-    const months = Math.floor(days / 30);
-    if (months < 12) return `In ${months} months`;
-
-    const years = Math.floor(months / 12);
-    return `In ${years} years`;
-  }
-
-  // PAST TIME
+  
+  
   if (diffSec < 60) return "Just now";
   if (diffSec < 3600) return `${Math.floor(diffSec / 60)} minutes ago`;
   if (diffSec < 86400) return `${Math.floor(diffSec / 3600)} hours ago`;
@@ -49,6 +31,7 @@ function timeAgo(dateTimeString) {
   const years = Math.floor(months / 12);
   return `${years} years ago`;
 }
+
 
 
 const StudentActivity = () => {

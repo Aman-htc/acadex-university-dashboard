@@ -48,7 +48,7 @@ function Schedule() {
                         year: "numeric",
                     })}
                 </p>
-              <div className="text-center">
+              <div className="text-center text-md-start">
                 {/* Schedule List */}
                 {filteredSchedule.length > 0 ? (
                     filteredSchedule.map((event) => (
@@ -63,7 +63,7 @@ function Schedule() {
                                         {event.title}
                                     </h6>
 
-                                    <span className="mb-2 XSmall-Regular bg-primary-subtle px-2 py-1 rounded-4 d-inline-block">
+                                    <span className="mb-2 XSmall-Regular  px-2 py-1 rounded-4 d-inline-block" style={{background:`${event.color}`}}>
                                         {event.tag}
                                     </span>
 

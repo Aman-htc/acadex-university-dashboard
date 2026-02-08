@@ -5,7 +5,12 @@
     "time": "9:00 AM to 12:00 PM",
     "title": "Career Development Workshop",
     "tag": "Business and Technology",
-    "audience": "Third and Fourth-year Students"
+    "audience": "Third and Fourth-year Students",
+    "color":"#E4EDFA"
+    
+    
+
+
   },
   {
     "id": 2,
@@ -13,7 +18,8 @@
     "time": "2:00 PM to 5:00 PM",
     "title": "Guest Lecture Series",
     "tag": "Humanities and Social Sciences",
-    "audience": "All Students"
+    "audience": "All Students",
+    "color":"#a3e1dd"
   },
   {
     "id": 3,
@@ -21,7 +27,8 @@
     "time": "7:00 PM to 10:00 PM",
     "title": "Movie Night under the Stars",
     "tag": "Hosted the University Film Club",
-    "audience": "All Classes"
+    "audience": "All Classes",
+    "color":"#D7F4E9"
   },
   {
     "id": 4,
@@ -29,7 +36,9 @@
     "time": "9:00 AM to 12:00 PM",
     "title": "Career Development Workshop",
     "tag": "Business and Technology",
-    "audience": "Third and Fourth-year Students"
+    "audience": "Third and Fourth-year Students",
+    "color":"#E4EDFA"
+
   },
   {
     "id": 5,
@@ -37,7 +46,8 @@
     "time": "2:00 PM to 5:00 PM",
     "title": "Guest Lecture Series",
     "tag": "Humanities and Social Sciences",
-    "audience": "All Students"
+    "audience": "All Students",
+    "color":"#2E946C"
   },
   {
     "id": 6,
@@ -45,7 +55,9 @@
     "time": "7:00 PM to 10:00 PM",
     "title": "Movie Night under the Stars",
     "tag": "Hosted the University Film Club",
-    "audience": "All Classes"
+    "audience": "All Classes",
+    "color":"#D7F4E9"
+
   },
   {
     "id": 7,
@@ -53,7 +65,10 @@
     "time": "9:00 AM to 12:00 PM",
     "title": "Career Development Workshop",
     "tag": "Business and Technology",
-    "audience": "Third and Fourth-year Students"
+    "audience": "Third and Fourth-year Students",
+    "color":"#E4EDFA"
+
+    
   },
   {
     "id": 8,
@@ -61,7 +76,10 @@
     "time": "2:00 PM to 5:00 PM",
     "title": "Guest Lecture Series",
     "tag": "Humanities and Social Sciences",
-    "audience": "All Students"
+    "audience": "All Students",
+     "color":"#2E946C"
+  
+
   },
   {
     "id": 9,
@@ -69,6 +87,9 @@
     "time": "7:00 PM to 10:00 PM",
     "title": "Movie Night under the Stars",
     "tag": "Hosted the University Film Club",
-    "audience": "All Classes"
+    "audience": "All Classes",
+    "color":"#D7F4E9"
+   
+    
   }
 ]
