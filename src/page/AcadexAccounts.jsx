@@ -1,6 +1,7 @@
 import React from 'react'
 import { Badge, Button, Card, Col, Container, Image, Row } from 'react-bootstrap'
 import { Envelope } from 'react-bootstrap-icons'
+import profileimage from '../assets/image/avtarimage.webp'
 import { Link } from 'react-router-dom';
 
 const AcadexAccounts = () => {
@@ -16,7 +17,7 @@ const AcadexAccounts = () => {
                 <Col  className="text-center">
                 
 
-                    <Image className="w-25" src="src/assets/image/avtarimage.webp" />
+                    <Image className="w-25" src={ profileimage} />
                     <h6>{Admin}</h6>
                     <Badge className="p-2 mb-4">8102648831</Badge>
                     <div className="mb-4">

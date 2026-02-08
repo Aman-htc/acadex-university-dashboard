@@ -1,6 +1,7 @@
 import React from 'react'
 import { ChevronDown } from 'react-bootstrap-icons'
 import logo from '../assets/icons/symbol.svg'
+import adminimage from '../assets/image/avtarimage.webp'
 import { Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -21,7 +22,7 @@ const SideBarHeader = () => {
                 <Link to='/accounts' className='text-decoration-none'>
                     <div className="d-flex align-items-center gap-2">
                         <Image
-                            src="src/assets/image/avtarimage.webp"
+                            src={adminimage}
                             roundedCircle
                             style={{ width: '30px', height: '30px' }}
                         />
