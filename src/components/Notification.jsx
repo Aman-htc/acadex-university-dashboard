@@ -1,4 +1,6 @@
 import React from "react";
+
+import avtarimage from '../assets/image/avtarimag2.webp';
 import { Card, Col, Image, Row } from "react-bootstrap";
 import { notificationData } from "../data/js/jsonPath";
 import {TitleHead} from "./main/index";
@@ -30,7 +32,7 @@ const Notification = () => {
             {/* Avatar */}
             <Col xs="auto" className="pe-2">
               <Image
-                src={item.image}
+                src={avtarimage }
                 roundedCircle
                 width={32}
                 height={32}

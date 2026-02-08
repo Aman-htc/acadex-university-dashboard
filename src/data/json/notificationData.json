@@ -2,7 +2,7 @@
   "notification": [
     {
       "id": 1,
-      "image": "src/assets/image/avtarimage.webp",
+      "image": "../assets/image/avtarimage.webp",
       "name": "Susan Grey",
       "title": "Reminder: Department meeting this Wednesday at 3 PM in the main conference hall.",
       "time": "2:00 PM"

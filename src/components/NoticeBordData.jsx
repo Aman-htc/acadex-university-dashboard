@@ -1,5 +1,5 @@
 import React from "react";
-// import noticeData from "../data/noticeData.json";
+import avtarimage from '../assets/image/avtarimage.webp'
 import { Button, Card, Col, Image, Row } from "react-bootstrap";
 import { Bullseye, Plus, ThreeDots } from "react-bootstrap-icons";
 import {FilterButton} from "./main/index";
@@ -46,7 +46,7 @@ const NoticeBoardData = () => {
               className="mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-start align-items-md-center"
             >
               <Image
-                src={item.image}
+                src={avtarimage}
                 style={{ width: "50px", height: "55px" }}
                 className="rounded-2 me-md-2 mb-2 mb-md-0"
               />

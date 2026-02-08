@@ -1,5 +1,5 @@
 import React from "react";
-const sideimage ='src/assets/image/youngbreadman.webp'
+import sideimage  from '../../assets/image/youngbreadman.webp'
 import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

@@ -1,12 +1,13 @@
 
 import React from 'react'
 import { Container, Image } from 'react-bootstrap'
+import comingsoonimage from '../assets/image/comingsoonimage.webp'
 
 const AcadexLibrary = () => {
   return (
     <div>
         <Container >
-        <Image src='src/assets/image/comingsoonimage.webp' style={{width:'100%'}}/>
+        <Image src={comingsoonimage} style={{width:'100%'}}/>
 
       </Container>
       
