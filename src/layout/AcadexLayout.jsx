@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Outlet } from 'react-router-dom'
-import {SideBar} from '../components/main/index'
+import {SideBar} from '../components/main/index.js'
 
 const AcadexLayout = () => {
     return (

@@ -18,7 +18,7 @@ const StudentsOverview = () => {
         >
           <div className="border-color p-3 rounded-3 d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
 
-            {/* Left Side: Title & Value */}
+            
             <div className="mb-2 mb-md-0">
               <p className="XSmall-Regular gray-200 mb-1 text-truncate" style={{ maxWidth: "150px" }}>
                 {item.title}

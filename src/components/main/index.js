@@ -10,7 +10,7 @@ import NoticeBoardData from "../NoticeBordData";
 import Notification from "../Notification";
 import RecentActivity from "../RecentActivity";
 import Schedule from "../Schedule";
-import SideBar from "../Sidebar";
+import SideBar from "../SideBar";
 import StudentActivity from "../StudentActivity";
 import StudentsOverview from "../StudentsOverview";
 import StudentsYearData from "../StudentYearData";

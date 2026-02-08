@@ -128,7 +128,7 @@ const SideBarLink = () => {
       <Nav.Link
         as={Link}
         to="/settings"
-        className="flex-shrink-0 link-hover d-flex align-items-center gap-2 gray-100 Button-Small"
+        className="flex-shrink-0 mb-5 pb-5 link-hover d-flex   align-items-center gap-2 gray-100 Button-Small"
       >
         <Gear size={20} /> Settings
       </Nav.Link>
