@@ -66,7 +66,7 @@ function SignUp() {
           </div>
 
           {/* Heading */}
-          <p className="Dis-2 text-dark mb-5">
+          <p className="Dis-2 text-dark mb-4">
             If opportunity doesn’t knock, build a <span className="text-primary">door</span>.
           </p>
 
@@ -82,7 +82,7 @@ function SignUp() {
           >
             <ToastContainer />
 
-            <Form.Group className="mb-5">
+            <Form.Group className="mb-4">
               <Form.Label className="form-input">First name</Form.Label>
               <Form.Control
 
@@ -94,7 +94,7 @@ function SignUp() {
               <div className="text-danger">{errors?.firstname?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-5">
+            <Form.Group className="mb-4">
               <Form.Label className="form-input">E-mail Address</Form.Label>
               <Form.Control
                 type="email"
@@ -105,7 +105,7 @@ function SignUp() {
               <div className="text-danger">{errors?.email?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-5">
+            <Form.Group className="mb-4">
               <Form.Label className="form-input">Password</Form.Label>
               <Form.Control
                 type="password"
@@ -116,7 +116,7 @@ function SignUp() {
               <div className="text-danger">{errors?.password?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-5">
+            <Form.Group className="mb-4">
               <Form.Label className="form-input">Confirm Password</Form.Label>
               <Form.Control
                 type="password"
@@ -127,7 +127,7 @@ function SignUp() {
               <div className="text-danger">{errors?.confirmPassword?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-5 ">
+            <Form.Group className="mb-4 ">
               <Form.Check
                 type="checkbox"
                 label={
