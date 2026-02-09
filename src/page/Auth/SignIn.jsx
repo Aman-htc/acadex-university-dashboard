@@ -67,7 +67,7 @@ function SignIn() {
         <Container fluid>
 
             <Row>
-                <Col lg={6} className="bg-color py-5   padding-x">
+                <Col lg={6} className="bg-color  small-py  padding-x">
                     {/* Logo and App Name */}
                     <div className="d-flex padding-b align-items-center">
                         <Image src={mainlogo} style={{ width: "44px", height: '44px' }} />
