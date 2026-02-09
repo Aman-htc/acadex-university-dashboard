@@ -70,14 +70,14 @@ function StudentsYearData() {
             </div>
 
             
-            <div className="mt-3">
+            <div className="mt-2">
                 {list.map((item, i) => (
                     <div
                         key={i}
                         className="d-flex justify-content-between align-items-center mb-3"
                     >
                         <span
-                            className="spansmallbox rounded-1 me-2"
+                            className="spansmallbox rounded-1 me-1"
                             style={{ background: item.color }}
                         />
 
