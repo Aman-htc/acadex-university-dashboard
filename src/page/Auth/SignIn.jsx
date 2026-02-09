@@ -67,22 +67,22 @@ function SignIn() {
         <Container fluid>
 
             <Row>
-                <Col lg={6} className="bg-color  py-5  padding-x">
+                <Col lg={6} className="bg-color py-5   padding-x">
                     {/* Logo and App Name */}
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex padding-b align-items-center">
                         <Image src={mainlogo} style={{ width: "44px", height: '44px' }} />
                         <h3 className="ms-2 mb-0 Dis-1 text-dark">Acadex</h3>
                     </div>
 
                     {/* Heading */}
-                    <p className="Dis-2 text-dark">
+                    <p className="Dis-2 mb-5 text-dark">
                         Logout the past, Login to the <span className="text-primary"> new!</span>.
                     </p>
 
 
-                    <p className="Title-4-Medium gray-500 ">
+                    {/* <p className="Title-4-Medium mb-4 gray-500 ">
                         A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
-                    </p>
+                    </p> */}
 
                     {/* Form */}
                     <Form
@@ -93,8 +93,8 @@ function SignIn() {
 
 
 
-                        <Form.Group className="mb-3">
-                            <Form.Label className="form-input">Email address</Form.Label>
+                        <Form.Group className="mb-5">
+                            <Form.Label className="form-input">E-mail Address</Form.Label>
                             <Form.Control
                                 type="email"
                                 {...register("email")}
@@ -104,10 +104,10 @@ function SignIn() {
                             <div className="text-danger">{errors?.email?.message}</div>
                         </Form.Group>
 
-                        <Form.Group className="mb-3">
+                        <Form.Group className="mb-5">
                             <div className='d-flex justify-content-between'>
                                 <Form.Label className="form-input">Password</Form.Label>
-                                <Form.Label className="form-input text-info ">Forgot Password</Form.Label>
+                                <Form.Label className="form-input text-primary ">Forgot Password</Form.Label>
                             </div>
                             <Form.Control
                                 type="password"
@@ -141,7 +141,7 @@ function SignIn() {
 
                         <p className=" Body-Bold pb-2" >
                             Don't have an account?
-                            <Link to='/sign-up' className="text-info"> Sign Up</Link>
+                            <Link to='/sign-up' className="text-primary text-decoration-none"> Sign Up</Link>
                         </p>
                         <p className=" Body-Bold pb-5 " >
                             {error}

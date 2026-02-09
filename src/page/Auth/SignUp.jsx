@@ -95,7 +95,7 @@ function SignUp() {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label className="form-input">Email address</Form.Label>
+              <Form.Label className="form-input">E-mail Address</Form.Label>
               <Form.Control
                 type="email"
                 {...register("email")}
@@ -105,7 +105,7 @@ function SignUp() {
               <div className="text-danger">{errors?.email?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-4">
               <Form.Label className="form-input">Password</Form.Label>
               <Form.Control
                 type="password"
@@ -116,7 +116,7 @@ function SignUp() {
               <div className="text-danger">{errors?.password?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-4">
               <Form.Label className="form-input">Confirm Password</Form.Label>
               <Form.Control
                 type="password"
@@ -127,14 +127,14 @@ function SignUp() {
               <div className="text-danger">{errors?.confirmPassword?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-5">
+            <Form.Group className="mb-5 ">
               <Form.Check
                 type="checkbox"
                 label={
                   <>
                     I agree to all the Terms of{" "}
-                    <a href="#" >
-                      conditions & Privacy Policy
+                    <a href="#" className=" Body-Bold text-decoration-none" >
+                      conditions <span className="gray-100">&</span> Privacy Policy
                     </a>
 
                   </>
@@ -151,7 +151,7 @@ function SignUp() {
 
             <p className=" Body-Bold" >
               Already have an account?
-              <Link to='/sign-in' className="text-info"> Log In</Link>
+              <Link to='/sign-in' className="text-primary text-decoration-none"> Log In</Link>
             </p>
           </Form>
         </Col>

@@ -51,7 +51,7 @@ const AcadexDashboard = () => {
           </Row>
 
           {/* Notifications / Year / Activity */}
-          <Row className="mb-3  justify-content-between">
+          <Row className="mb-3 g-3 justify-content-between">
             <Col xxl={4} lg={6} md={6} xs={12}>
 
 

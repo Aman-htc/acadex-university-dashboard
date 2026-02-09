@@ -1,18 +1,20 @@
 $font-primary: 'Fira Sans', sans-serif;
 
+$font-secondary: 'Poppins', sans-serif;
+
 
 
 
 //    DISPLAY
 
 .Dis-1 {
-    font-family: $font-primary;
+    font-family:$font-secondary;
     font-size: 48px;
     font-weight: 700;
 }
 
 .Dis-2 {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 36px;
     font-weight: 600;
 }
@@ -63,7 +65,7 @@ $font-primary: 'Fira Sans', sans-serif;
 }
 
 .Title-4-Medium {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 16px;
     font-weight: 500;
 }
@@ -107,9 +109,9 @@ $font-primary: 'Fira Sans', sans-serif;
 }
 
 .Body-Bold {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
 
 }
 
@@ -142,7 +144,7 @@ $font-primary: 'Fira Sans', sans-serif;
 }
 
 .XSmall-simiBold {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 12px;
     font-weight: 600;
 }
@@ -239,8 +241,10 @@ $font-primary: 'Fira Sans', sans-serif;
 
 .form-input {
     color: #333333;
+    font-family: $font-secondary;
     font-size: 14px;
     font-weight: 600;
+    padding-bottom: 2px;
 
 }
 
@@ -257,7 +261,7 @@ $font-primary: 'Fira Sans', sans-serif;
 }
 @media (min-width: 768px) {
   .padding-x {
-    padding-inline:10rem ;
+    padding-inline:11rem;
     
   }
 }
