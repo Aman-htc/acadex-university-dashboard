@@ -51,7 +51,7 @@ function Schedule() {
                                 </Col>
 
                                 <Col xs={12} sm={9}>
-                                    <div className="border-start border-3 ps-3">
+                                    <div className="border-start border-3 ps-2">
                                         <h6 className="XSmall-Medium text-dark mb-1">
                                             {event.title}
                                         </h6>
