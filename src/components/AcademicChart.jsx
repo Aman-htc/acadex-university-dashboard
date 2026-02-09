@@ -76,7 +76,7 @@ const AcademicChart = () => {
   };
 
   return (
-    <Card className="pb-4 p-3 bg-color border-color  rounded-4">
+    <Card className="p-4 bg-color border-color  rounded-4">
       <Row className="align-items-center mb-3">
         <Col>
           <h6 className="mb-0 text-dark Title-4-Bold">
@@ -89,7 +89,7 @@ const AcademicChart = () => {
       </Row>
 
       {chartData.length > 0 ? (
-        <ResponsiveContainer width="100%" height={200}>
+        <ResponsiveContainer width="100%" height={260}>
           <AreaChart data={chartData} margin={{ left: -10, right: 10, top: 10, bottom: 30 }}>
             {/* Gradient */}
             <defs>

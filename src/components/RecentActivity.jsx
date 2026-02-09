@@ -51,7 +51,7 @@ const RecentActivity = () => {
 
   return (
     <Container className="py-1">
-      <Card className="p-3 border-0 bg-color rounded-4">
+      <Card className="p-4 border-0 bg-color rounded-4">
 
         {/* Header */}
         <TitleHead title="Recent Activity" view="View All" />
@@ -72,8 +72,8 @@ const RecentActivity = () => {
                     className="border-radius d-flex align-items-center justify-content-center"
                     style={{
                       background: item.color,
-                      width: 32,
-                      height: 32,
+                      width: 40,
+                      height: 40,
                     }}
                   >
                     <Icon className="text-white" size={16} />
@@ -81,7 +81,7 @@ const RecentActivity = () => {
                 </Col>
 
                 {/* Text + Time */}
-                <Col className="ps-0">
+                <Col className="ps-2">
                   <div className="gray-100 descripation XSmall-Regular">
                     {item.text}
                   </div>

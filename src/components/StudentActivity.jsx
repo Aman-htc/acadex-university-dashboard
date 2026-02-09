@@ -38,7 +38,7 @@ const StudentActivity = () => {
   const activities = studentData.ActivityData.slice(0,4);
 
   return (
-    <Card className="px-3 py-1 pb-0 border-color bg-color rounded-4">
+    <Card className="p-4 pb-3  border-color bg-color rounded-4">
 
       {/* Header */}
       <TitleHead title="Student Activity" view="View All" />
@@ -49,7 +49,7 @@ const StudentActivity = () => {
           const Icon = iconMap[item.icon];
 
           return (
-            <Row key={item.id} className="mb-3 align-items-start">
+            <Row key={item.id} className="mb-3  mt-2 align-items-start">
 
               {/* Icon */}
               <Col xs="auto" className="pe-2">
@@ -59,7 +59,7 @@ const StudentActivity = () => {
               </Col>
 
              
-              <Col className="ps-0">
+              <Col className="ps-2">
                 {/* Title + Time */}
                 <div className="d-flex justify-content-between align-items-start mb-1">
                   <div className="XSmall-Medium" >

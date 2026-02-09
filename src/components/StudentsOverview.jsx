@@ -20,7 +20,7 @@ const StudentsOverview = () => {
 
             
             <div className="mb-2 mb-md-0">
-              <p className="XSmall-Regular gray-200 mb-1 text-truncate" style={{ maxWidth: "150px" }}>
+              <p className="XSmall-Medium gray-200 mb-1 text-truncate" style={{ maxWidth: "150px" }}>
                 {item.title}
               </p>
               <div className="Display-4 text-dark">
@@ -29,8 +29,8 @@ const StudentsOverview = () => {
             </div>
 
              {/* Right Side: Icon  */}
-            <div className="bg-primary-subtle p-2 rounded-2 d-flex align-items-center justify-content-center">
-              <ArrowRight className="text-primary" />
+            <div className="bg-primary-subtle p-3 rounded-2 d-flex align-items-center justify-content-center">
+              <ArrowRight className="text-primary" size={24} />
             </div>
 
           </div>

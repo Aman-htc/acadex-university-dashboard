@@ -45,13 +45,13 @@ function Schedule() {
                 <div className="text-center text-lg-start">
                     {filteredSchedule.length > 0 ? (
                         filteredSchedule.map((event) => (
-                            <Row key={event.id} className="align-items-center  mb-3 g-2">
-                                <Col xs={12} sm={3} className="XSmall-Regular gray-200 ">
+                            <Row key={event.id} className="align-items-center  mb-4 g-2">
+                                <Col xs={12} sm={3} className="XSmall-Regular p-3 gray-200 ">
                                     {event.time}
                                 </Col>
 
                                 <Col xs={12} sm={9}>
-                                    <div className="border-start border-3 ps-2">
+                                    <div className="border-start border-3 ps-4">
                                         <h6 className="XSmall-Medium text-dark mb-1">
                                             {event.title}
                                         </h6>
