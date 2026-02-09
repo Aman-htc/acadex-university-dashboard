@@ -1,24 +1,21 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
-const TitleHead = ({title,view}) => {
+const TitleHead = ({ title, view }) => {
   return (
     <div>
-        <Row>
-            <Col className='text-start'md={8} >
-            <div className='Title-4-Bold text-dark d-flex flex-nowrap'>{title}</div>
-            
-            </Col>
-            <Col className='text-end' md={4}>
-            <p className='Button-Small gray-100'>{view}</p>
+      <div className="d-flex justify-content-between align-items-center mb-3">
+      <div className="Title-4-Bold text-dark">
+        {title}
+      </div>
 
-            </Col>
+      <span className="Button-Small gray-100 text-nowrap">
+        {view}
+      </span>
+    </div>
 
-        </Row>
-      
     </div>
   )
 }
 
 export default TitleHead
- 

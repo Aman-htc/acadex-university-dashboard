@@ -5,7 +5,7 @@ const UpgraadeButton = () => {
     return (
         <div>
             <div
-                className="position-relative ms-2 d-none d-md-block bg-gray-light rounded-3 px-2 pt-5 pb-4 text-center"
+                className="position-relative ms-2 d-none d-md-block bg-gray-light text-center rounded-3 px-4 pt-5 pb-4 text-center"
 
             >
 

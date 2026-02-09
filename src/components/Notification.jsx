@@ -19,7 +19,7 @@ const Notification = () => {
   const notifications = notificationData.notification.slice(0,5);
 
   return (
-    <Card className=" p-4 pb-3 border-color bg-color rounded-4">
+    <Card className=" p-4  border-color bg-color rounded-4">
 
 
       <TitleHead title="Messages" view="View All" />
@@ -43,7 +43,7 @@ const Notification = () => {
             {/* Content */}
             <Col className="ps-0">
               <div className="d-flex justify-content-between align-items-center flex-wrap">
-                <span className="text-dark XSmall-Medium text-truncate" style={{ maxWidth: "70%" }}>
+                <span className="text-dark XSmall-Medium text-truncate" >
                   {item.name}
                 </span>
 

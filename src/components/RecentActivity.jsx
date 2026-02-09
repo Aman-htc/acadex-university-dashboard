@@ -51,7 +51,7 @@ const RecentActivity = () => {
 
   return (
     <Container className="py-1">
-      <Card className="p-4 border-0 bg-color rounded-4">
+      <Card className="p-4 border-0  bg-color rounded-4">
 
         {/* Header */}
         <TitleHead title="Recent Activity" view="View All" />
@@ -64,7 +64,7 @@ const RecentActivity = () => {
             return (
               <Row
                 key={item.id}
-                className="g-3 mb-3 align-items-start"
+                className="g-3 mb-3  align-items-start"
               >
                 {/* Icon */}
                 <Col xs="auto">
