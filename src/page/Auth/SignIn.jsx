@@ -119,7 +119,7 @@ function SignIn() {
                         </Form.Group>
 
 
-                        <Form.Group className="mb-4">
+                        <Form.Group className="mb-5">
                             <Form.Check
                                 type="checkbox"
                                 label={
@@ -135,7 +135,7 @@ function SignIn() {
                             <div className="text-danger">{errors?.termscheck?.message}</div>
                         </Form.Group>
 
-                        <Button type="submit" className="Body-Bold px-5 py-3 mb-5" >
+                        <Button type="submit" className="Body-Bold px-5 py-3 mt-2 mb-5" >
                             Login
                         </Button>
 
