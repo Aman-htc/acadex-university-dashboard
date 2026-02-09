@@ -53,18 +53,18 @@ const AcadexDashboard = () => {
           {/* Notifications / Year / Activity */}
           <Row className="mb-3 g-5 justify-content-between">
             <Col xxl={4} lg={6} md={6} xs={12}>
-            {/* <Col md={4}> */}
+
 
               <Notification />
             </Col>
 
             <Col xxl={3} lg={6} md={6} xs={12}>
-            {/* <Col md={4}> */}
+
               <StudentsYearData />
             </Col>
 
             <Col xxl={5} lg={12} md={12} xs={12}>
-            {/* <Col md={5}> */}
+
               <StudentActivity />
             </Col>
           </Row>
@@ -80,16 +80,16 @@ const AcadexDashboard = () => {
 
         {/* RIGHT SIDE */}
         <Col xxl={3} lg={3} md={12} xs={12} className="p-0 ">
-        <Row className='h-100 '>
-          <Col className='"h-100 d-flex flex-column'>
-          <Schedule />
-          <RecentActivity />
-          <div className='mt-auto'>
-          <Footer />
-          </div>
-          </Col>
+          <Row className='h-100 '>
+            <Col className='"h-100 d-flex flex-column'>
+              <Schedule />
+              <RecentActivity />
+              <div className='mt-auto'>
+                <Footer />
+              </div>
+            </Col>
           </Row>
-          
+
         </Col>
 
       </Row>
