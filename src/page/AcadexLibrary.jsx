@@ -7,7 +7,7 @@ const AcadexLibrary = () => {
   return (
     <div>
         <Container >
-        <Image src={comingsoonimage} style={{width:'100%'}}/>
+        <Image src={comingsoonimage} className='w-100'/>
 
       </Container>
       

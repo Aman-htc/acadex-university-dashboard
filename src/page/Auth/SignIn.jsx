@@ -1,6 +1,7 @@
 import sideimage from '../../assets/image/youngbreadman.webp';
 
 
+
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
 import { useForm } from "react-hook-form";
@@ -34,7 +35,7 @@ function SignIn() {
     });
 
     const handleOnSubmit = (data) => {
-        console.log("Form Submitted", data);
+        console.log(data);
 
 
         const getdata = JSON.parse(localStorage.getItem('signupUser'))
@@ -64,7 +65,7 @@ function SignIn() {
 
     return (
         <Container fluid>
-           
+
             <Row>
                 <Col lg={6} className="bg-color  py-5  padding-x">
                     {/* Logo and App Name */}
@@ -78,7 +79,7 @@ function SignIn() {
                         Logout the past, Login to the <span className="text-primary"> new!</span>.
                     </p>
 
-                  
+
                     <p className="Title-4-Medium gray-500 ">
                         A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
                     </p>
@@ -104,7 +105,10 @@ function SignIn() {
                         </Form.Group>
 
                         <Form.Group className="mb-3">
-                            <Form.Label className="form-input">Password</Form.Label>
+                            <div className='d-flex justify-content-between'>
+                                <Form.Label className="form-input">Password</Form.Label>
+                                <Form.Label className="form-input text-info ">Forgot Password</Form.Label>
+                            </div>
                             <Form.Control
                                 type="password"
                                 {...register("password")}
@@ -136,7 +140,7 @@ function SignIn() {
                         </Button>
 
                         <p className=" Body-Bold pb-2" >
-                            Don’t have an account?
+                            Don't have an account?
                             <Link to='/sign-up' className="text-info"> Sign Up</Link>
                         </p>
                         <p className=" Body-Bold pb-5 " >
@@ -149,6 +153,7 @@ function SignIn() {
                 <Col lg={6} className="">
                     <Image
                         src={sideimage}
+
                         className="w-100 h-100"
                     />
                 </Col>
