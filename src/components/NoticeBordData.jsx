@@ -7,7 +7,7 @@ import { noticeData } from "../data/js/jsonPath";
 
 
 const NoticeBoardData = () => {
-  const data = noticeData?.noticeData || [];
+  const data = noticeData.noticeData;
 
   return (
     <Card className="p-3 border-color bg-color rounded-4">
