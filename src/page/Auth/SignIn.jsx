@@ -93,7 +93,7 @@ function SignIn() {
 
 
 
-                        <Form.Group className="mb-5">
+                        <Form.Group className="mb-3">
                             <Form.Label className="form-input">E-mail Address</Form.Label>
                             <Form.Control
                                 type="email"
@@ -104,7 +104,7 @@ function SignIn() {
                             <div className="text-danger">{errors?.email?.message}</div>
                         </Form.Group>
 
-                        <Form.Group className="mb-4">
+                        <Form.Group className="mb-3">
                             <div className='d-flex justify-content-between'>
                                 <Form.Label className="form-input">Password</Form.Label>
                                 <Form.Label className="form-input text-primary ">Forgot Password</Form.Label>
@@ -143,14 +143,14 @@ function SignIn() {
                             Don't have an account?
                             <Link to='/sign-up' className="text-primary text-decoration-none"> Sign Up</Link>
                         </p>
-                        <p className=" text-danger Body-Bold pb-5 " >
+                        <p className=" text-danger Body-Bold pb-2 " >
                             {error}
 
                         </p>
                     </Form>
                 </Col>
 
-                <Col lg={6} className="">
+                <Col lg={6} className="py-2">
                     <Image
                         src={sideimage}
 

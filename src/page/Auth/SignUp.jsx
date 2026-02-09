@@ -156,7 +156,7 @@ function SignUp() {
           </Form>
         </Col>
 
-        <Col lg={6} className="">
+        <Col lg={6} className="py-2">
           <Image
             src={sideimage}
             className=" w-100 h-100 "
