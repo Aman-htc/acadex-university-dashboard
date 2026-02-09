@@ -60,18 +60,18 @@ function SignUp() {
       <Row>
         <Col lg={6} className="bg-color py-5 padding-x">
           {/* Logo and App Name */}
-          <div className="d-flex align-items-center mb-5">
+          <div className="d-flex align-items-center small-p">
             <Image src={mainlogo} style={{ width: "44px", height: '44px' }} />
             <h3 className="ms-2 mb-0 Dis-1 text-dark">Acadex</h3>
           </div>
 
           {/* Heading */}
-          <p className="Dis-2 text-dark">
+          <p className="Dis-2 text-dark mb-5">
             If opportunity doesn’t knock, build a <span className="text-primary">door</span>.
           </p>
 
           {/* Subheading */}
-          <p className="Title-4-Medium gray-500 ">
+          <p className="Title-4-Medium gray-500 mb-5 ">
             A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
           </p>
 
@@ -82,7 +82,7 @@ function SignUp() {
           >
             <ToastContainer />
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-5">
               <Form.Label className="form-input">First name</Form.Label>
               <Form.Control
 
@@ -94,7 +94,7 @@ function SignUp() {
               <div className="text-danger">{errors?.firstname?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-5">
               <Form.Label className="form-input">E-mail Address</Form.Label>
               <Form.Control
                 type="email"
@@ -105,7 +105,7 @@ function SignUp() {
               <div className="text-danger">{errors?.email?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-4">
+            <Form.Group className="mb-5">
               <Form.Label className="form-input">Password</Form.Label>
               <Form.Control
                 type="password"
@@ -116,7 +116,7 @@ function SignUp() {
               <div className="text-danger">{errors?.password?.message}</div>
             </Form.Group>
 
-            <Form.Group className="mb-4">
+            <Form.Group className="mb-5">
               <Form.Label className="form-input">Confirm Password</Form.Label>
               <Form.Control
                 type="password"
