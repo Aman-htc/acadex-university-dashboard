@@ -104,7 +104,7 @@ function SignIn() {
                             <div className="text-danger">{errors?.email?.message}</div>
                         </Form.Group>
 
-                        <Form.Group className="mb-5">
+                        <Form.Group className="mb-4">
                             <div className='d-flex justify-content-between'>
                                 <Form.Label className="form-input">Password</Form.Label>
                                 <Form.Label className="form-input text-primary ">Forgot Password</Form.Label>
@@ -119,7 +119,7 @@ function SignIn() {
                         </Form.Group>
 
 
-                        <Form.Group className="mb-5">
+                        <Form.Group className="mb-4">
                             <Form.Check
                                 type="checkbox"
                                 label={
@@ -143,7 +143,7 @@ function SignIn() {
                             Don't have an account?
                             <Link to='/sign-up' className="text-primary text-decoration-none"> Sign Up</Link>
                         </p>
-                        <p className=" Body-Bold pb-5 " >
+                        <p className=" text-danger Body-Bold pb-5 " >
                             {error}
 
                         </p>
