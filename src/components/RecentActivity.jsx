@@ -81,7 +81,7 @@ const RecentActivity = () => {
                 </Col>
 
                 {/* Text + Time */}
-                <Col className="ps-2">
+                <Col className="ps-1">
                   <div className="gray-100 descripation XSmall-Regular">
                     {item.text}
                   </div>
