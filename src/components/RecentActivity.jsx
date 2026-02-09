@@ -51,7 +51,7 @@ const RecentActivity = () => {
 
   return (
     <Container className="py-1">
-      <Card className="p-4 border-0  bg-color rounded-4">
+      <Card className="p-2 p-md-4 border-0  bg-color rounded-4">
 
         {/* Header */}
         <TitleHead title="Recent Activity" view="View All" />

@@ -38,7 +38,7 @@ const StudentActivity = () => {
   const activities = studentData.ActivityData.slice(0,4);
 
   return (
-    <Card className="p-4 pb-3  border-color bg-color rounded-4">
+    <Card className="p-2 p-md-4 pb-3  border-color bg-color rounded-4">
 
       {/* Header */}
       <TitleHead title="Student Activity" view="View All" />
@@ -59,7 +59,7 @@ const StudentActivity = () => {
               </Col>
 
              
-              <Col className="ps-2">
+              <Col className="ps-1 ps-md-2">
                 {/* Title + Time */}
                 <div className="d-flex justify-content-between align-items-start mb-1">
                   <div className="XSmall-Medium" >
