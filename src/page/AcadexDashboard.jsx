@@ -41,10 +41,10 @@ const AcadexDashboard = () => {
             <Col md={4}>
               <Notification />
             </Col>
-            <Col md={4}>
+            <Col md={3}>
             <StudentsYearData/>
             </Col>
-            <Col md={4}>
+            <Col md={5}>
               <StudentActivity />
             </Col>
           </Row>

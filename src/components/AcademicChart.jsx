@@ -109,7 +109,7 @@ const AcademicChart = () => {
               type="category"
               axisLine={false}
               tickLine={false}
-              height={10}
+              height={14}
               tick={<CustomXAxisTick />}
             />
 
