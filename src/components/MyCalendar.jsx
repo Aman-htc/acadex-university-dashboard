@@ -17,7 +17,7 @@ function MyCalendar() {
             onChange={setDate}
             value={date}
 
-            className="border-0 XSmall-Medium  text-center  custom-calendar "
+            className="border-0 XSmall-Medium w-100 text-center  custom-calendar "
 
 
             navigationLabel={({ date }) => (

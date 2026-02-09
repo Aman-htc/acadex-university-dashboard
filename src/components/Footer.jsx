@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Youtube, Linkedin } from "react-bootstrap
 
 function Footer() {
     return (
-        <footer className=" py-3 mt-3 ">
+        <footer className=" py-3  ">
             <Container className=" ">
                 <Row className="text-center text-md-end">
                 

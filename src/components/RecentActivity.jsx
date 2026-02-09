@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Row, Col, Card, Container } from "react-bootstrap";
 
@@ -5,7 +6,7 @@ import { iconMap } from "../data/js/iconMap";
 import { studentData } from "../data/js/jsonPath";
 import { TitleHead } from "./main/index";
 
-// Function to calculate "time ago" (past + future)
+// Function to calculate "time ago" (past)
 function timeAgo(dateTimeString) {
   if (!dateTimeString) return "";
 
@@ -14,8 +15,6 @@ function timeAgo(dateTimeString) {
   const diffMs = now - eventDate;
   const diffSec = Math.floor(diffMs / 1000);
 
-  
-  
   if (diffSec >= 0) {
     if (diffSec < 60) return "Just now";
     if (diffSec < 3600) return `${Math.floor(diffSec / 60)} minutes ago`;
@@ -36,10 +35,9 @@ function timeAgo(dateTimeString) {
 }
 
 const RecentActivity = () => {
-  
   const activities = studentData.RecentActivity;
 
-  // 1 month ka filter
+  // 1 month filter
   const now = new Date();
   const oneMonthAgo = new Date();
   oneMonthAgo.setMonth(now.getMonth() - 1);
@@ -58,14 +56,16 @@ const RecentActivity = () => {
         {/* Header */}
         <TitleHead title="Recent Activity" view="View All" />
 
-        {/* Activity Items */}
+       
         {recentActivities.length > 0 ? (
           recentActivities.map((item) => {
             const Icon = iconMap[item.icon];
 
             return (
-              <Row key={item.id} className="g-3 mb-3 align-items-start">
-
+              <Row
+                key={item.id}
+                className="g-3 mb-3 align-items-start"
+              >
                 {/* Icon */}
                 <Col xs="auto">
                   <div
@@ -80,19 +80,16 @@ const RecentActivity = () => {
                   </div>
                 </Col>
 
-                {/* Text + time */}
+                {/* Text + Time */}
                 <Col className="ps-0">
                   <div className="gray-100 descripation XSmall-Regular">
                     {item.text}
-                  
-
                   </div>
 
                   <div className="gray-200 XSmall-Regular mt-1">
                     {timeAgo(item.date)}
                   </div>
                 </Col>
-
               </Row>
             );
           })
@@ -108,3 +105,4 @@ const RecentActivity = () => {
 };
 
 export default RecentActivity;
+

@@ -8,28 +8,21 @@ import { useContext, } from "react";
 import { DateContext } from "../contexts/Context";
 
 function Schedule() {
-    const { date } = useContext(DateContext)
-    
+    const { date } = useContext(DateContext);
 
-    // selected date → YYYY-MM-DD (LOCAL)
     const selectedDateString = date.toLocaleDateString("en-CA");
 
-
-    // filter schedule by date
     const filteredSchedule = scheduleData.filter(
         (event) => event.date === selectedDateString
     );
 
-
-
     return (
-        <Container className="py-4">
-            <Card className="p-3 border-0  bg-light rounded-4">
+        <div className="py-3 px-2">
+            <Card className="p-3 border-0 bg-light rounded-4">
 
-                {/* Calendar */}
-               
-                <MyCalendar />
-           
+
+                <MyCalendar className="w-100" />
+
 
                 <hr className="my-3 border-secondary" />
 
@@ -48,41 +41,45 @@ function Schedule() {
                         year: "numeric",
                     })}
                 </p>
-              <div className="text-center text-md-start">
-                {/* Schedule List */}
-                {filteredSchedule.length > 0 ? (
-                    filteredSchedule.map((event) => (
-                        <Row key={event.id} className="align-items-start mb-3">
-                            <Col sm={3} className="XSmall-Regular gray-200 fw-medium">
-                                {event.time}
-                            </Col>
 
-                            <Col>
-                                <div className="border-start border-3 ps-3">
-                                    <h6 className="XSmall-Medium text-dark mb-1">
-                                        {event.title}
-                                    </h6>
+                <div className="text-center text-lg-start">
+                    {filteredSchedule.length > 0 ? (
+                        filteredSchedule.map((event) => (
+                            <Row key={event.id} className="align-items-center  mb-3 g-2">
+                                <Col xs={12} sm={3} className="XSmall-Regular gray-200 ">
+                                    {event.time}
+                                </Col>
 
-                                    <span className="mb-2 XSmall-Regular  px-2 py-1 rounded-4 d-inline-block" style={{background:`${event.color}`}}>
-                                        {event.tag}
-                                    </span>
+                                <Col xs={12} sm={9}>
+                                    <div className="border-start border-3 ps-3">
+                                        <h6 className="XSmall-Medium text-dark mb-1">
+                                            {event.title}
+                                        </h6>
 
-                                    <p className="text-primary XSmall-Regular small mb-0">
-                                        <FaLaptop size={12} /> {event.audience}
-                                    </p>
-                                </div>
-                            </Col>
-                        </Row>
-                    ))
-                ) : (
-                    <p className="text-muted">
-                        There is no schedule for this date
-                    </p>
-                )}
-              </div>
+                                        <span
+                                            className="mb-2 XSmall-Regular px-1 py-1 rounded-4 d-inline-block"
+                                            style={{ background: event.color }}
+                                        >
+                                            {event.tag}
+                                        </span>
+
+                                        <p className="text-primary XSmall-Regular  mb-0">
+                                            <FaLaptop size={12} /> {event.audience}
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        ))
+                    ) : (
+                        <p className="text-muted text-center">
+                            There is no schedule for this date
+                        </p>
+                    )}
+                </div>
             </Card>
-        </Container>
+        </div>
     );
 }
+
 
 export default Schedule;
