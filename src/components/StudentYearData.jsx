@@ -24,7 +24,7 @@ function StudentsYearData() {
     let offset = 0;
 
     return (
-        <Card className="border-color bg-color px-2 pt-2 pt-md-4  px-md-4 pb-0  rounded-4">
+        <Card className="border-color bg-color px-2 pt-2 pt-md-3  px-md-4 pb-0  rounded-4">
 
 
             <TitleHead title='Students' view={<ThreeDots size={18} />
