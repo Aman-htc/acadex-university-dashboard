@@ -46,12 +46,12 @@ function Schedule() {
                     {filteredSchedule.length > 0 ? (
                         filteredSchedule.map((event) => (
                             <Row key={event.id} className="align-items-center  mb-4 g-2">
-                                <Col xs={12} sm={2} className="XSmall-Regular   gray-200 ">
+                                <Col xs={12} sm={3} className="XSmall-Regular   gray-200 ">
                                     {event.time}
                                 </Col>
 
                                 <Col xs={12} sm={9}>
-                                    <div className="border-start border-3 ps-3">
+                                    <div className="border-start border-3 ps-1">
                                         <h6 className="XSmall-Medium text-dark mb-1">
                                             {event.title}
                                         </h6>
