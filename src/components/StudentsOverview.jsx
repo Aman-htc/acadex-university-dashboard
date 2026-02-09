@@ -29,7 +29,7 @@ const StudentsOverview = () => {
             </div>
 
              {/* Right Side: Icon  */}
-            <div className="bg-primary-subtle p-3 rounded-2 d-flex align-items-center justify-content-center">
+            <div className="bg-primary-subtle  rounded-2 d-flex align-items-center justify-content-center" style={{width:'40px', height:'40px'}}>
               <ArrowRight className="text-primary" size={24} />
             </div>
 

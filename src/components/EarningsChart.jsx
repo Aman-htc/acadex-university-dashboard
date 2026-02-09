@@ -80,7 +80,7 @@ const EarningsChart = () => {
                         dataKey="expenses"
                         fill="#2f9e6f"
                         radius={[3, 3, 0, 0]}
-                        barSize={12}
+                        barSize={11}
                     />
                     <Bar
                         dataKey="earnings"
@@ -88,7 +88,7 @@ const EarningsChart = () => {
                         radius={[3, 3, 0, 0]}
                         
 
-                        barSize={12}
+                        barSize={11}
                     />
                 </BarChart>
             </ResponsiveContainer>

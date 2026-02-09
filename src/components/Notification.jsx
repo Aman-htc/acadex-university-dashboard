@@ -19,7 +19,7 @@ const Notification = () => {
   const notifications = notificationData.notification.slice(0,5);
 
   return (
-    <Card className="mb-2 p-4 pb-3 border-color bg-color rounded-4">
+    <Card className=" p-4 pb-3 border-color bg-color rounded-4">
 
 
       <TitleHead title="Messages" view="View All" />

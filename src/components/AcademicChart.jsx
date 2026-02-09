@@ -76,7 +76,7 @@ const AcademicChart = () => {
   };
 
   return (
-    <Card className="py-4 px-3 bg-color border-color  rounded-3">
+    <Card className="py-4 px-3 bg-color border-color  rounded-4">
       <Row className="align-items-center mb-3">
         <Col>
           <h6 className="mb-0 text-dark Title-4-Bold">
