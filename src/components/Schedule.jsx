@@ -18,7 +18,7 @@ function Schedule() {
 
     return (
         <div className="py-3 px-2">
-            <Card className="p-3 border-0 bg-light rounded-4">
+            <Card className="p-2 border-0 bg-light rounded-4">
 
 
                 <MyCalendar className="w-100" />
@@ -51,7 +51,7 @@ function Schedule() {
                                 </Col>
 
                                 <Col xs={12} sm={9}>
-                                    <div className="border-start border-3 ps-1">
+                                    <div className="border-start border-3 ps-2">
                                         <h6 className="XSmall-Medium text-dark mb-1">
                                             {event.title}
                                         </h6>
