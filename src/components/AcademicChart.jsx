@@ -89,7 +89,7 @@ const AcademicChart = () => {
       </Row>
 
       {chartData.length > 0 ? (
-        <ResponsiveContainer width="100%" height={200}>
+        <ResponsiveContainer width="100%" height={240}>
           <AreaChart data={chartData} margin={{ left: -10, right: 10, top: 10, bottom: 30 }}>
             {/* Gradient */}
             <defs>
@@ -133,7 +133,7 @@ const AcademicChart = () => {
                 if (payload.value ===  maxItem.value) {
                   return (
                     <g>
-                      <line x1={cx} y1={cy} x2={cx} y2={160} stroke="#2f9e6f" strokeDasharray="4 6" strokeWidth={2} />
+                      <line x1={cx} y1={cy} x2={cx} y2={200} stroke="#2f9e6f" strokeDasharray="4 6" strokeWidth={2} />
                       <rect x={cx - 22} y={cy - 42} rx={6} ry={6} width={44} height={24} fill="#000" />
                       <text x={cx} y={cy - 26} textAnchor="middle" fill="#fff" fontSize={10} fontWeight="600">
                         {payload.value}%

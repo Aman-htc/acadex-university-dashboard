@@ -1,5 +1,5 @@
 import React from "react";
-import sideimage  from '../../assets/image/youngbreadman.webp'
+import sideimage from '../../assets/image/youngbreadman.webp'
 import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -29,7 +29,7 @@ const schema = yup.object().shape({
 });
 
 function SignUp() {
-  const navigate =useNavigate()
+  const navigate = useNavigate()
   const notify = () => toast.success('The form has been submitted successfully');
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm({
@@ -38,7 +38,7 @@ function SignUp() {
 
   const handleOnSubmit = (data) => {
     console.log("Form Submitted", data);
-  
+
 
     const userData = {
       firstname: data.firstname,
@@ -51,7 +51,7 @@ function SignUp() {
     reset();
 
 
-    
+
 
   };
 
@@ -156,12 +156,33 @@ function SignUp() {
           </Form>
         </Col>
 
-        <Col lg={6} className="py-2">
-          <Image
-            src={sideimage}
-            className=" w-100 h-100 "
-          />
+        <Col lg={6} className="py-4 bg-primary-subtle">
+          <div className=" h-100  justify-content-center align-items-center d-flex flex-column text-center ">
+
+
+            <Image
+              src="https://png.pngtree.com/png-clipart/20250123/original/pngtree-a-cheerful-young-student-with-long-png-image_20325474.png"
+
+              className="w-75  mb-4 "
+
+            />
+
+
+            <h1 className="Dis-1 lh-base mt-auto">
+              Where <span className="border-bottom border-warning">remote</span> teams <br />
+              get work done
+            </h1>
+
+            <p className="Title-4-Medium  mt-3">
+              The online collaborative whiteboard platform to bring teams together,
+              anytime, anywhere.
+            </p>
+
+          </div>
+
         </Col>
+
+
       </Row>
     </Container>
   );

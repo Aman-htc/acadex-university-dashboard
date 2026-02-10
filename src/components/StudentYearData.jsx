@@ -77,7 +77,7 @@ function StudentsYearData() {
                         className="d-flex justify-content-between align-items-center mb-3"
                     >
                         <span
-                            className="spansmallbox rounded-1 me-1"
+                            className="spansmallbox rounded-1 me-1 "
                             style={{ background: item.color }}
                         />
 
@@ -88,7 +88,7 @@ function StudentsYearData() {
                             </span>
                         </p>
 
-                        <p className="ms-auto XSmall-Medium mb-0">
+                        <p className="ms-auto Button-Small mb-0">
                             {item.value.toLocaleString()} students
                         </p>
                     </div>

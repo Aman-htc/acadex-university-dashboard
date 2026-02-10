@@ -14,7 +14,7 @@ import { earningsData } from '../data/js/jsonPath';
 
 const EarningsChart = () => {
     return (
-        <Card className="pt-0 pt-md-1  px-1 px-md-3 border-color bg-color rounded-4 ">
+        <Card className="pt-0 pt-md-1  ps-0 pe-1 pe-md-3 border-color bg-color rounded-4 ">
             
             <div className="d-flex justify-content-between mt-2 ms-3 align-items-center mb-3">
                 <h5 className="mb-0 Title-4-Bold text-dark">Earnings</h5>
@@ -22,7 +22,7 @@ const EarningsChart = () => {
             </div>
 
             {/* Legend */}
-            <div className="d-flex gap-4 mb-3 ms-4 text-muted small">
+            <div className="d-flex gap-4 mb-3 ms-3 text-muted small">
                 <div className="d-flex gray-200 XSmall-Regular align-items-center gap-2">
                     <span
                         style={{
@@ -49,7 +49,7 @@ const EarningsChart = () => {
             </div>
 
             {/* Chart */}
-            <ResponsiveContainer width="100%" height={200}>
+            <ResponsiveContainer width="100%" height={240}>
                 <BarChart
                     data={earningsData.earningsReport}
                     barGap={8}
@@ -80,7 +80,7 @@ const EarningsChart = () => {
                         dataKey="expenses"
                         fill="#2f9e6f"
                         radius={[3, 3, 0, 0]}
-                        barSize={11}
+                        barSize={10}
                     />
                     <Bar
                         dataKey="earnings"
@@ -88,7 +88,7 @@ const EarningsChart = () => {
                         radius={[3, 3, 0, 0]}
                         
 
-                        barSize={11}
+                        barSize={10}
                     />
                 </BarChart>
             </ResponsiveContainer>

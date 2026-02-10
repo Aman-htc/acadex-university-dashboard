@@ -1,4 +1,4 @@
-import sideimage from '../../assets/image/youngbreadman.webp';
+
 
 
 
@@ -64,9 +64,9 @@ function SignIn() {
     };
 
     return (
-        <Container fluid>
+        <Container fluid className="p-4">
 
-            <Row>
+            <Row className="">
                 <Col lg={6} className="bg-color  small-py  padding-x">
                     {/* Logo and App Name */}
                     <div className="d-flex padding-b align-items-center">
@@ -80,9 +80,7 @@ function SignIn() {
                     </p>
 
 
-                    {/* <p className="Title-4-Medium mb-4 gray-500 ">
-                        A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
-                    </p> */}
+
 
                     {/* Form */}
                     <Form
@@ -150,13 +148,32 @@ function SignIn() {
                     </Form>
                 </Col>
 
-                <Col lg={6} className="py-2">
-                    <Image
-                        src={sideimage}
+                <Col lg={6} className="py-4 bg-primary-subtle">
+                    <div className=" h-100  justify-content-center align-items-center d-flex flex-column text-center ">
+                       
 
-                        className="w-100 h-100"
-                    />
+                        <Image
+                            src="https://png.pngtree.com/png-clipart/20250123/original/pngtree-a-cheerful-young-student-with-long-png-image_20325474.png"
+
+                            className="w-75  mb-4 "
+
+                        />
+
+
+                        <h1 className="Dis-1 lh-base mt-auto">
+                            Where <span className="border-bottom border-warning">remote</span> teams <br />
+                            get work done
+                        </h1>
+
+                        <p className="Title-4-Medium  mt-3">
+                            The online collaborative whiteboard platform to bring teams together,
+                            anytime, anywhere.
+                        </p>
+
+                    </div>
+
                 </Col>
+
             </Row>
         </Container>
     );
