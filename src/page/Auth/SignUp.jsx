@@ -156,31 +156,30 @@ function SignUp() {
           </Form>
         </Col>
 
-        <Col lg={6} className="py-4 bg-primary-subtle">
-          <div className=" h-100  justify-content-center align-items-center d-flex flex-column text-center ">
-
-
-            <Image
-              src="https://png.pngtree.com/png-clipart/20250123/original/pngtree-a-cheerful-young-student-with-long-png-image_20325474.png"
-
-              className="w-75  mb-4 "
-
-            />
-
-
-            <h1 className="Dis-1 lh-base mt-auto">
-              Where <span className="border-bottom border-warning">remote</span> teams <br />
-              get work done
-            </h1>
-
-            <p className="Title-4-Medium  mt-3">
-              The online collaborative whiteboard platform to bring teams together,
-              anytime, anywhere.
-            </p>
-
-          </div>
-
-        </Col>
+         <Col
+                            lg={6}
+                            className="bg-primary-subtle d-flex justify-content-center align-items-center"
+                            style={{ minHeight: "100vh" }}
+                        >
+                            <div className="text-center">
+        
+                                <Image
+                                    src="https://png.pngtree.com/png-clipart/20250123/original/pngtree-a-cheerful-young-student-with-long-png-image_20325474.png"
+                                    className="w-75 mb-4"
+                                />
+        
+                                <h1 className="Dis-1 lh-base">
+                                    Where <span className="border-bottom border-warning">remote</span> teams <br />
+                                    get work done
+                                </h1>
+        
+                                <p className="mt-3 Title-4-Medium ">
+                                    The online collaborative whiteboard platform to bring teams together,
+                                    anytime, anywhere.
+                                </p>
+        
+                            </div>
+                        </Col>
 
 
       </Row>
