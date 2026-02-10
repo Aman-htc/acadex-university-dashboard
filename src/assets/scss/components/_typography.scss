@@ -261,10 +261,18 @@ $font-secondary: 'Poppins', sans-serif;
 }
 @media (min-width: 768px) {
   .padding-x {
-    padding-inline:10rem;
+    padding-inline:7rem;
     
   }
 }
+@media (min-width: 1400px) {
+  .padding-x {
+    padding-inline:15rem;
+    
+  }
+}
+
+
 
 .padding-b {
     padding-bottom: 7rem;
@@ -299,3 +307,4 @@ $font-secondary: 'Poppins', sans-serif;
   background-color: red;
   border-radius: 50%;
 }
+
