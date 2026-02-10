@@ -38,7 +38,7 @@ const StudentActivity = () => {
   const activities = studentData.ActivityData.slice(0,4);
 
   return (
-    <Card className="p-2 p-md-3 pb-3  border-color bg-color rounded-4">
+    <Card className="p-2 p-md-3 h-100  border-color bg-color rounded-4">
 
       {/* Header */}
       <TitleHead title="Student Activity" view="View All" />

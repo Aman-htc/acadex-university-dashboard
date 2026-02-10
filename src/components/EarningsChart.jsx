@@ -14,7 +14,7 @@ import { earningsData } from '../data/js/jsonPath';
 
 const EarningsChart = () => {
     return (
-        <Card className="pt-0 pt-md-1  ps-0 pe-1 pe-md-3 border-color bg-color rounded-4 ">
+        <Card className=" h-100 pt-md-1  pe-1 pe-md-3 border-color bg-color rounded-4 ">
             
             <div className="d-flex justify-content-between mt-2 ms-3 align-items-center mb-3">
                 <h5 className="mb-0 Title-4-Bold text-dark">Earnings</h5>
