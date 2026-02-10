@@ -165,7 +165,7 @@ function SignIn() {
                             get work done
                         </h1>
 
-                        <p className="mt-3 Title-4-Medium ">
+                        <p className="mt-3 w-75 mx-auto text-center Title-4-Medium">
                             The online collaborative whiteboard platform to bring teams together,
                             anytime, anywhere.
                         </p>
