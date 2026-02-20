@@ -19,7 +19,7 @@ const FilterButton = ({ text }) => {
         rounded 
         px-3 
         py-2 
-        text-truncate
+       
       "
       style={{ minWidth: "fit-content", maxWidth: "150px" }}
     >

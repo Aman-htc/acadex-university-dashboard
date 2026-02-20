@@ -57,7 +57,7 @@ const RecentActivity = () => {
         <TitleHead title="Recent Activity" view="View All" />
 
        
-        {recentActivities.length > 0 ? (
+        {recentActivities.length >  0 ? (
           recentActivities.map((item) => {
             const Icon = iconMap[item.icon];
 

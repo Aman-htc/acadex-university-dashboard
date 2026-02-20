@@ -10,7 +10,7 @@ const StudentsOverview = () => {
     <Row className="g-3">
       {statsData.Data.map((item) => (
         <Col
-          key={item.id}
+          key={item.id} 
           xl={3}    
           lg={3}   
           md={6}    
@@ -28,7 +28,7 @@ const StudentsOverview = () => {
               </div>
             </div>
 
-             {/* Right Side: Icon  */}
+          
             <div className="bg-primary-subtle  rounded-2 d-flex align-items-center justify-content-center" style={{width:'40px', height:'40px'}}>
               <ArrowRight className="text-primary" size={24} />
             </div>

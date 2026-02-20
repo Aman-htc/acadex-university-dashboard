@@ -37,7 +37,7 @@ function SignUp() {
   });
 
   const handleOnSubmit = (data) => {
-    console.log("Form Submitted", data);
+    // console.log("Form Submitted", data);
 
 
     const userData = {
@@ -46,9 +46,13 @@ function SignUp() {
       password: data.password
     };
     localStorage.setItem("signupUser", JSON.stringify(userData))
+    
     navigate('/sign-in')
     notify();
     reset();
+
+    
+
 
 
 
@@ -172,12 +176,12 @@ function SignUp() {
               Where <span className="border-bottom border-warning">remote</span> teams <br />
               get work done
             </h1>
-            
-              <p className="mt-3 w-75 mx-auto text-center Title-4-Medium">
-                The online collaborative whiteboard platform to bring teams together,
-                anytime, anywhere.
-              </p>
-         
+
+            <p className="mt-3 w-75 mx-auto text-center Title-4-Medium">
+              The online collaborative whiteboard platform to bring teams together,
+              anytime, anywhere.
+            </p>
+
 
           </div>
         </Col>

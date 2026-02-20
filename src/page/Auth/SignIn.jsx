@@ -35,23 +35,27 @@ function SignIn() {
     });
 
     const handleOnSubmit = (data) => {
-        console.log(data);
+        
 
 
         const getdata = JSON.parse(localStorage.getItem('signupUser'))
 
         if (!getdata) {
-            setError('"No user found, please sign up"')
+            setError("No user found, please sign up")
             return;
         }
         const matchdata = getdata.email === data.email && getdata.password === data.password
 
         if (matchdata) {
+           
+            document.cookie = "login=true; max-age=7200; path=/"
+            localStorage.setItem("user", JSON.stringify(getdata));
             localStorage.setItem("login", "true")
+            navigate('/')
             notify();
             setError('')
 
-            navigate('/')
+            
         } else {
             setError('Invalid email or password')
         }

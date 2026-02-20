@@ -1,10 +1,12 @@
 {
   "academicPerformance": [
+    
     {
       "year": 2024,
       "type": "Even",
       "value": 35
     },
+    
     {
       "year": 2024,
       "type": "Odd",
@@ -35,11 +37,8 @@
       "year": 2027,
       "type": "Even",
       "value": 66
-    },
-    {
-      "year": 2027,
-      "type": "Odd",
-      "value": 60
     }
+
+    
   ]
 }

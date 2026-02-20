@@ -20,7 +20,7 @@ const SideBarLink = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem("login");
+    // localStorage.removeItem("login");
     localStorage.removeItem("signupUser");
     navigate("/sign-in");
   };
@@ -100,12 +100,7 @@ const SideBarLink = () => {
         <Book size={20} /> Library
       </Nav.Link>
 
-      <Nav.Link
-        onClick={handleLogout}
-        className="mb-md-4 mb-0 flex-shrink-0 link-hover d-flex align-items-center gap-2 gray-100 Button-Medium"
-      >
-        <LogOut size={22} /> Logout
-      </Nav.Link>
+      
 
       <hr className="d-none d-md-block" />
 
@@ -131,6 +126,14 @@ const SideBarLink = () => {
         className="flex-shrink-0 mb-md-5  link-hover d-flex   align-items-center gap-2 gray-100 Button-Small"
       >
         <Gear size={20} /> Settings
+      </Nav.Link>
+
+
+      <Nav.Link
+        onClick={handleLogout}
+        className="mb-md-4 mb-0 flex-shrink-0 link-hover d-flex align-items-center gap-2 gray-100 Button-Medium"
+      >
+        <LogOut size={22} /> Logout
       </Nav.Link>
     </Nav>
   );

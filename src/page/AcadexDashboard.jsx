@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useEffect } from 'react';
 
 import {
   AcademicChart,
@@ -17,8 +18,38 @@ import {
   StudentsOverview,
   StudentsYearData
 } from '../components/main/index';
+import { useNavigate } from 'react-router-dom';
 
 const AcadexDashboard = () => {
+  const navigate = useNavigate()
+
+
+  useEffect(() => {
+    function getCookie(name) {
+      let cookies = document.cookie.split("; ");
+      for (let c of cookies) {
+        let [key, value] = c.split("=");
+        if (key === name) return value;
+      }
+      return null;
+    }
+
+    if (getCookie("login") && localStorage.getItem("user")) {
+      console.log("Auto Login Success");
+      // navigate('/')
+
+    } else {
+      localStorage.removeItem("user");
+      navigate('/sign-in')
+
+    }
+  }, []);
+
+
+
+
+
+
   return (
     <Container fluid className="p-3 pt-0">
       <Row className="g-3 ">
@@ -52,18 +83,18 @@ const AcadexDashboard = () => {
 
           {/* Notifications / Year / Activity */}
           <Row className="mb-3 g-3 justify-content-between">
-            <Col xxl={4}  md={6} xs={12}>
+            <Col xxl={4} md={6} xs={12}>
 
 
               <Notification />
             </Col>
 
-            <Col xxl={3}  md={6} xs={12}>
+            <Col xxl={3} md={6} xs={12}>
 
               <StudentsYearData />
             </Col>
 
-            <Col xxl={5}  md={12} xs={12}>
+            <Col xxl={5} md={12} xs={12}>
 
               <StudentActivity />
             </Col>
